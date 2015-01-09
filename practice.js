@@ -51,8 +51,10 @@ welcome
 //Save the result of the return value from your adder function, then alert "The Total Number was " + the number that was
 //returned from adder.
 
-  //Code Here
-
+var adder = function(x, y, z) {
+	return x + y + z;
+}
+alert("The Total Number was " + adder(1, 5, 6));
 
 //Next Problem
 
@@ -60,7 +62,8 @@ welcome
 
 //What is the difference between arguments and parameters?
 
-  //Answer Here
+Parameters are the variables in the function that values which will be passed to it.
+Arguments are the values that are passed to the Parameters.
 
 
 //Next problem
@@ -70,8 +73,10 @@ welcome
 //What are all the falsy values in JavaScript and how do you check if something is falsy?
 
 
-  //Answer Here
-
+	Nan, false, 0, "" empty string, null, undefined
+	if (x != true) {
+		do something
+	};
 
 
 //Next Problem
@@ -80,14 +85,17 @@ welcome
 
 //Create a function called myName that returns your name
 
-  //Code Here
+var myName = function () {
+	return "Ryan";
+}
 
 //Now save the function definition of myName into a new variable called newMyName
 
-  //Code Here
+var newMyName = myName();
 
 //Now alert the result of invoking newMyName
 
+alert(newMyName);
 
 
 //Next problem
@@ -96,7 +104,9 @@ welcome
 
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
-  //Code Here
+  var outerFn = function() {
+
+  }
 
 //Now save the result of invoking outerFn into a variable called innerFn.
 
